@@ -1,0 +1,42 @@
+{
+  "name": "SmartHome",
+  "description": "SmartHome Backend",
+  "version": "0.0.2",
+  "engines": {
+    "node": "6.9.4",
+    "npm": "2.14.12"
+  },
+  "main": "index.js",
+  "keywords": [
+    "smarthome"
+  ],
+  "contributors": [
+    {
+      "name": "Vincze David",
+      "email": "vincdave@yahoo.com",
+      "web": "https://github.com/vdave007"
+    }
+  ],
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "array-difference": "^0.0.1",
+    "body-parser": "^1.17.1",
+    "crypto": "0.0.3",
+    "express": "^4.15.3",
+    "http": "^0.0.0",
+    "mongoose": "^4.7.6",
+    "nodemailer": "^4.0.1",
+    "request": "^2.81.0",
+    "request-json": "^0.6.2",
+    "socket.io": "^1.7.3",
+    "twilio": "^3.4.0",
+    "validator": "^7.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vdave007/SmartHome.git"
+  },
+  "homepage": "https://github.com/vdave007/SmartHome"
+}
