@@ -38,6 +38,13 @@ module.exports = (app,io) => {
 		res.json(true);
 	})
 
+    app.get('/api/shutdown', (req, res) => {
+
+        var id = req.param('id')
+    	sendmsg(id,"SHUTDOWN")
+		res.json(true);
+	})
+
 	function sendmsg(id,msg) {
 		console.log(id +" "+msg)
 		sockets.forEach(function(s){
@@ -77,6 +84,11 @@ module.exports = (app,io) => {
                 
                         console.log('new user',msg.guid +" --- "+ msg.house_ids);
                     }
+            });
+            
+             socket.on('disconnect',function(){
+                console.log('diconnected', socketnumber);
+                socket.disconnect();
             });
         });
         
