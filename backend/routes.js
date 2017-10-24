@@ -58,7 +58,7 @@ module.exports = (app,io) => {
     io.on('connection', function(socket){
         console.log('connected');
         socketnumber++
-
+        socket.emit("register","new");
         
         socket.on('register', function(msg){
             console.log(msg);
